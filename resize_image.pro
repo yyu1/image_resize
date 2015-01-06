@@ -8,7 +8,7 @@
 ;winsize - window size for resizing, output will be (inxdim / winsize) and (inydim / winsize) , extra pixels at the end will be ignored
 
 
-Pro resize_image_flt, infile, out_mean_file, out_stdev_file, inxdim, inydim, win_size
+Pro resize_image, infile, out_mean_file, out_stdev_file, inxdim, inydim, win_size
 	openr, inlun, infile, /get_lun
 	openw, out_mean_lun, out_mean_file, /get_lun
 	openw, out_stdv_lun, out_stdev_file, /get_lun
